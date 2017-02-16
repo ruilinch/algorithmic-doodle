@@ -1,5 +1,5 @@
 ##### Practice for Coursera: Algorithm Part I by Robert Sedgewick @ Princeton
-## Quick-find for determining connectivity
+## Quick-find to determine connectivity
 # based on a series of inputs, return connected components
 ## process the inputs to allow inaccuracy
 # find the first two numbers contained in the inputs as the connected pair
