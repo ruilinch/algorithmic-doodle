@@ -1,10 +1,12 @@
 ##### Practice for Coursera: Algorithm Part I by Robert Sedgewick @ Princeton
-## Quick-find for determining connectivity
+## Quick-union to determine connectivity
 # based on a series of inputs, return connected components
 ## process the inputs to allow inaccuracy
 # find the first two numbers contained in the inputs as the connected pair
 
 def get_root(item):
+    # find the root of a node
+    # the root of an unconnected node is the node itself
     global num_dict
     if item in num_dict:
         tmp = item
@@ -62,7 +64,7 @@ def get_digits(inp):
 def print_components(a_dict):
     b_dict = a_dict.copy()
     for item in b_dict:
-        print "number ", item, "has id ", b_dict[item]
+        print "number ", item, "has root ", get_root(item)
     
 
 if __name__ == "__main__":
